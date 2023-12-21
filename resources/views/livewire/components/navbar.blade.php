@@ -1,13 +1,34 @@
 <div x-data="{ open : true }" class="container mx-auto px-4 py-8">
 
-    <nav class="flex justify-between">
+    <nav class="flex justify-between items-center">
 
-        <img src="{{ asset('asset/logo.svg') }}" alt="">
-        <img @click="open = !open" src="{{ asset('asset/menu.svg') }}" alt="">
+        <img class="order-1 md:order-2" src="{{ asset('asset/logo.svg') }}" alt="">
+        <img class="order-2 md:order-1 lg:hidden" @click="open = !open" src="{{ asset('asset/menu.svg') }}" alt="">
+
+        <ul class="lg:flex order-2 hidden justify-center border gap-6 font-bold text-dark">
+            <li>
+                <a class="" href="/">Home</a>
+            </li>
+            <li>
+                <a class="opacity-50" href="/">Discover</a>
+            </li>
+            <li>
+                <a class="opacity-50" href="/">Special Deals</a>
+            </li>
+            <li>
+                <a class="opacity-50" href="/">Contact</a>
+            </li>
+        </ul>
+
+        <div class="md:flex hidden order-3 gap-1 justify-center px-3 w-56">
+            <button class="rounded-full shadow hover:bg-slate-100 text-dark py-4 font-bold text-sm grow">Log in</button>
+            <button class="bg-primary hover:opacity-80 rounded-full py-4 text-white font-bold text-sm grow">Sign
+                Up</button>
+        </div>
     </nav>
 
     <div x-show="open" x-transition x-data="{openLogin : false}"
-        class="fixed flex right-0 justify-between gap-1 bottom-0 left-0 p-4">
+        class="lg:hidden fixed flex right-0 justify-evenly gap-1 bottom-0 left-0 py-4">
         <div
             class="flex flex-col justify-center hover:cursor-pointer items-center text-xs gap-1 text-center text-primary font-bold hover:text-primary hover:opacity-100">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -47,7 +68,7 @@
             Contact
         </div>
         <div @click="openLogin = !openLogin"
-            class="flex flex-col justify-center hover:cursor-pointer items-center text-xs gap-1 opacity-50 text-center hover:text-primary hover:opacity-100">
+            class="flex flex-col md:hidden justify-center hover:cursor-pointer items-center text-xs gap-1 opacity-50 text-center hover:text-primary hover:opacity-100">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                 stroke="currentColor" data-slot="icon" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
