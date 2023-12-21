@@ -6,6 +6,12 @@ module.exports = {
             fontFamily: {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
+            colors : {
+                'orange' : '#FF5722',
+                'primary' : '#5D50C6',
+                'secondary' : '#F85E9F',
+                'dark' : '#222831',
+           }
         },
     },
     variants: {
