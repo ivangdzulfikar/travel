@@ -1,11 +1,11 @@
-<div x-data="{ open : true }" class="container mx-auto px-4 py-8">
+<div x-data="{ open : true }" class="container mx-auto p-4 fixed top-0 bg-white">
 
-    <nav class="flex justify-between items-center">
+    <nav class="flex justify-between items-center bg-white">
 
-        <img class="order-1 md:order-2" src="{{ asset('asset/logo.svg') }}" alt="">
-        <img class="order-2 md:order-1 lg:hidden" @click="open = !open" src="{{ asset('asset/menu.svg') }}" alt="">
+        <img class="order-1 md:order-2" src="{{ asset('asset/logo.svg') }}" alt="Travlog">
+        <img class="order-2 md:order-1 lg:hidden" @click="open = !open" src="{{ asset('asset/menu.svg') }}" alt="Menu">
 
-        <ul class="lg:flex order-2 hidden justify-center border gap-6 font-bold text-dark">
+        <ul class="lg:flex order-2 hidden justify-center gap-6 font-bold text-dark">
             <li>
                 <a class="" href="/">Home</a>
             </li>
@@ -28,7 +28,7 @@
     </nav>
 
     <div x-show="open" x-transition x-data="{openLogin : false}"
-        class="lg:hidden fixed flex right-0 justify-evenly gap-1 bottom-0 left-0 py-4">
+        class="lg:hidden fixed flex right-0 justify-evenly gap-1 bottom-0 left-0 py-4 bg-white z-50">
         <div
             class="flex flex-col justify-center hover:cursor-pointer items-center text-xs gap-1 text-center text-primary font-bold hover:text-primary hover:opacity-100">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -75,7 +75,7 @@
             </svg>
             More
         </div>
-        <div x-show="openLogin" x-transition class="flex gap-1 fixed justify-center px-3 bottom-20 right-0 left-0">
+        <div x-show="openLogin" x-transition class="bg-white flex gap-1 fixed justify-center p-3 bottom-16 right-0 left-0">
             <button class="rounded-full shadow hover:bg-slate-100 text-dark py-4 font-bold text-sm grow">Log in</button>
             <button class="bg-primary hover:opacity-80 rounded-full py-4 text-white font-bold text-sm grow">Sign
                 Up</button>

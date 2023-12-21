@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
-    <livewire:components.navbar />
-    
+
+<div class="container mx-auto mb-28 mt-[85px]">
+   <livewire:components.hero />
+
+   <livewire:components.partner />
+</div>
+
 @endsection
