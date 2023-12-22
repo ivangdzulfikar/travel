@@ -9,7 +9,6 @@
    
    <livewire:components.services />
 
-   <livewire:components.destination />
    
 </div>
 
