@@ -15,9 +15,9 @@
             <p class="text-center mx-auto lg:mx-0 text-sm md:text-lg md:w-3/5 lg:w-4/5 lg:text-sm lg:text-start opacity-50 text-dark">We always make our customer happy by providing
                 as many choices as possible </p>
         </div>
-        <div class="flex flex-col gap-4 md:flex-row w-full justify-center lg:justify-start lg:mx-0 text-sm">
-            <button class="bg-primary hover:opacity-80 rounded-full py-4 text-white px-8 font-bold text-sm">Get Strated</button>
-            <button class="rounded-full shadow hover:bg-slate-100 text-dark px-8 py-4 font-bold text-sm flex items-center justify-center gap-2">
+        <div class="flex flex-col gap-4 md:flex-row w-full lg:w-96 justify-center lg:justify-start lg:mx-0 text-sm">
+            <button class="bg-primary hover:opacity-80 rounded-full hover:shadow-lg duration-150 py-4 text-white px-8 font-bold text-sm ">Get Strated</button>
+            <button class="rounded-full shadow hover:bg-slate-100 hover:shadow-lg duration-150 text-dark px-8 py-4 font-bold text-sm flex items-center justify-center gap-2 ">
                 <img src="{{ asset('asset/icon/play.svg') }}" alt="watch">
                 Watch Demo
             </button>
