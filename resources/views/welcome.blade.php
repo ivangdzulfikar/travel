@@ -13,6 +13,7 @@
 
    <livewire:components.travel-point />
    
+   <livewire:components.features />
 </div>
 
 @endsection
