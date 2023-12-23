@@ -10,6 +10,8 @@
    <livewire:components.services />
 
    <livewire:components.destination />
+
+   <livewire:components.travel-point />
    
 </div>
 
