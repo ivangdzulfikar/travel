@@ -3,10 +3,13 @@
 @section('body')
 
     <livewire:components.navbar />
-
+    
     @yield('content')
     
     @isset($slot)
-        {{ $slot }}
+    {{ $slot }}
     @endisset
+    
+    <livewire:components.footer />
+
 @endsection
