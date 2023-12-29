@@ -1,4 +1,4 @@
-<div x-data="{ open : true }" class="container mx-auto p-4 fixed top-0 left-0 right-0 bg-blend-color-burn z-50">
+<div x-data="{ open : true }" class="container mx-auto p-4 fixed top-0 left-0 right-0 bg-white z-50">
 
     <nav class="flex justify-between items-center bg-white mx-auto">
 
